@@ -7,6 +7,7 @@ module.exports = {
         customGray: "#3a3a3a",
         bodyBg: "#f7f7f7",
         contactBg: "#060a56",
+        footerBg: "#22334b"
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
