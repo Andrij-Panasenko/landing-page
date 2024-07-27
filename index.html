@@ -4,11 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./public/styles.css" />
   <title>Кураж тур</title>
 </head>
 
-<body class="bg-bodyBg">
+<body class="bg-bodyBg font-roboto">
   <header class="absolute top-4 w-full z-10">
     <div class="container mx-auto px-5 w-full h-24 flex justify-between items-center">
       <a href="/">
@@ -19,8 +23,8 @@
           <!-- Address area + soc media -->
           <div class="flex gap-4">
             <div class="flex">
-              <svg class=" text-white" aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <svg class=" text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -30,8 +34,8 @@
               <p class="text-sm font-bold text-white">г. Харьков, ул. Мироносицкая 10</p>
             </div>
             <div class="flex text-white">
-              <svg class="text-white" aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <svg class="text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z" />
               </svg>
@@ -194,7 +198,8 @@
           <h1 class="font-bold text-white text-3xl mb-8 inline">
             Лучшие предложения по солнечному Египту из Харькова
           </h1>
-          <button type="button" class="bg-yellow-300 rounded-xl text-black font-semibold p-2 w-64">
+          <button type="button"
+            class="bg-yellow-300 hover:bg-yellow-500 transition-colors rounded-xl text-black font-semibold p-2 w-64">
             Получить предложение
           </button>
         </div>
@@ -207,15 +212,15 @@
 
 
     </section>
-    <section>
-      <div class="container mx-auto px-5 pt-20 pb-16">
-        <div class="flex gap-5">
+    <section class="bg-white pt-20 pb-16">
+      <div class="container mx-auto px-5">
+        <div class="flex gap-5 mb-24">
           <a href="#" class="font-bold text-yellow-400 text-2xl">Горящие туры</ф>
             <a href="#" class="font-bold text-black text-2xl">Популярные туры</a>
         </div>
 
       </div>
-      <ul class="bg-white flex flex-col xl:flex-row lg:justify-evenly items-center gap-4">
+      <ul class="flex flex-col xl:flex-row lg:justify-evenly items-center gap-4">
         <li class="bg-bodyBg rounded-2xl p-3 flex h-52 max-w-lg">
           <div class=" w-44 h-44 rounded-2xl bg-blue-400">
             <img src="" alt="">
@@ -288,9 +293,72 @@
 
       </ul>
     </section>
+    <section class="pt-11 pb-20">
+      <div class="container mx-auto px-5">
+        <h1 class="uppercase font-bold text-2xl mb-16">Наши преимущества</h1>
+        <div class="flex flex-col items-center xl:flex-row xl:gap-24">
+          <img src="./src/images/placeholder.png" alt="Our benefits photo">
+          <p class="text-lg pt-36 pb-44">Очень долго подбирали разные варианты для того, чтобы отпраздновать свой
+            юбилейный День рождения в
+            путешествии и не могли определиться... Решили обратиться за помощью в турагенство. Гульнара, выслушав все
+            пожелания,
+            предложила отдых в
+            Турции, отель Justiniano Club Park Conti 5* в Окурджалар возле Аланьи. Мы очень благодарны ей за
+            предложенный
+            вариант!!!! Отдых получился отличный! Отель с большой ухоженной территорией, внимательный обслуживающий
+            персонал.
+            Отличный номер с видом на море.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="bg-bottom bg-cover bg-no-repeat pt-12 pb-10"
+      style="background-image: linear-gradient(rgba(6, 10, 86, 0.5), rgba(6, 10, 86, 0.5)), url('./src/images/contact-us-bg.jpg')">
+      <div class="container mx-auto px-5">
+        <h2 class="uppercase font-bold text-2xl mb-9 text-white">Хочу предложение по туру</h2>
+        <form class="pt-14 pb-12 prl-11 pr-6 pl-10 bg-black bg-opacity-60">
+          <div class="flex flex-col items-center gap-7 lg:flex-row xl:gap-2 xl:justify-between">
+            <div class="relative w-full xl:max-w-44 2xl:max-w-60">
+              <input placeholder="" type="text" name="name" id="name"
+                class="contact-input p-2 border-b border-white focus:outline-none w-full bg-transparent text-white">
+              <label for="name"
+                class="contact-label absolute left-2 translate-y-2 transition-transform text-white">Имя</label>
+            </div>
+            <div class="relative w-full xl:max-w-44 2xl:max-w-60">
+              <input placeholder="" type="email" name="email" id="email"
+                class="contact-input p-2 border-b border-white focus:outline-none w-full bg-transparent text-white">
+              <label for="email"
+                class="contact-label absolute left-2 translate-y-2 transition-transform text-white">Email</label>
+            </div>
+            <div class="relative w-full xl:max-w-44 2xl:max-w-60">
+              <input placeholder="" type="tel" name="phone" id="tel"
+                class="contact-input p-2 border-b border-white focus:outline-none w-full bg-transparent text-white">
+              <label for="tel"
+                class="contact-label absolute left-2 translate-y-2 transition-transform text-white">Телефон</label>
+            </div>
+            <div class="w-full xl:max-w-44 2xl:max-w-60">
+              <select name="" id=""
+                class="p-2 outline-transparent w-full border-b border-white focus:outline-none bg-transparent text-white">
+                <option value="-1" disabled selected hidden>Страна тура</option>
+                <option value="turkey" class="text-yellow-400">Турция</option>
+                <option value="egypt" class="text-yellow-400">Египет</option>
+                <option value="sri-lanks" class="text-yellow-400">Шри-ланка</option>
+                <option value="dominicana" class="text-yellow-400">Доминикана</option>
+              </select>
+            </div>
+            <button type="button"
+              class="bg-yellow-300 hover:bg-yellow-500 transition-colors rounded-xl text-black font-semibold p-2 w-64">
+              Получить предложение
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
   <footer>
-    <div class="container"></div>
+    <div class="container">
+
+    </div>
   </footer>
 </body>
 
