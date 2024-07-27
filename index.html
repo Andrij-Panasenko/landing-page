@@ -20,7 +20,7 @@
       </a>
       <div class="space-y-7">
         <div class="flex justify-evenly">
-          <div class="flex gap-4">
+          <div class="flex flex-col gap-4 sm:flex-row">
             <div class="flex">
               <svg class=" text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                 fill="none" viewBox="0 0 24 24">
@@ -45,20 +45,20 @@
               </a>
             </div>
           </div>
-          <div class="flex gap-4 text-white">
+          <div class="flex flex-col justify-evenly ml-4 sm:flex-row sm:gap-4 sm:ml-0 text-white ">
             <a href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank">
-              <svg width="16" height="16" class="fill-current">
+              <svg width="20" height="20" class="fill-current">
                 <use href="./src/images/sprite.svg#facebook"></use>
               </svg>
             </a>
             <a href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank">
-              <svg width="16" height="16" class="fill-current">
+              <svg width="20" height="20" class="fill-current">
                 <use href="./src/images/sprite.svg#instagram"></use>
               </svg>
             </a>
           </div>
         </div>
-        <div class="flex justify-between bg-yellow-300 rounded-xl navbar-width px-5">
+        <div class="hidden lg:flex justify-between bg-yellow-300 rounded-xl navbar-width px-5">
           <div class="group relative">
             <p class="cursor-pointer px-6 py-2 font-bold text-base relative">
               Главная
@@ -178,6 +178,102 @@
           </div>
         </div>
       </div>
+
+
+
+
+            <!-- Mobile menu -->
+      <div data-menu
+        class="bg-white fixed z-50 top-0 left-0 w-screen h-screen pt-20 pr-9 pb-10 pl-10 grid grid-cols-1 sm:grid-cols-2 overflow-scroll transition-opacity is-hidden">
+        <button data-menu-close
+          class="absolute bg-slate-50 top-6 right-6 w-6 h-6 rounded-full border border-solid border-slate-200 flex justify-center items-center text-black">
+          x
+        </button>
+      
+        <div class="mb-8">
+          <h2 class="font-bold text-base mb-3">Главная </h2>
+          <div class="space-y-1">
+            <p class="cursor-pointer">Here is a dropdown item</p>
+            <p class="cursor-pointer">Here is a dropdown item</p>
+            <p class="cursor-pointer">Here is a dropdown item</p>
+          </div>
+        </div>
+        <div class="mb-8">
+          <h2 class="font-bold text-base mb-3">Туры </h2>
+          <div class="space-y-1">
+            <p class="cursor-pointer">Горящие туры</p>
+            <p class="cursor-pointer">Поиск тура</p>
+            <p class="cursor-pointer">Туры по Украине</p>
+            <p class="cursor-pointer">Экскурсионные туры</p>
+            <p class="cursor-pointer">Week-end туры</p>
+          </div>
+        </div>
+        <div class="mb-8">
+          <h2 class="font-bold text-base mb-3">Страны </h2>
+          <div class="space-y-1">
+            <p class="cursor-pointer">Here is a dropdown item</p>
+            <p class="cursor-pointer">Here is a dropdown item</p>
+            <p class="cursor-pointer">Here is a dropdown item</p>
+          </div>
+        </div>
+        <div class="mb-8">
+          <h2 class="font-bold text-base mb-3">Услуги </h2>
+          <div class="space-y-1">
+            <p class="cursor-pointer">Авиабилеты</p>
+            <p class="cursor-pointer">Визовая поддержка</p>
+            <p class="cursor-pointer">Индивидуальный трансфер</p>
+            <p class="cursor-pointer">Подарочные сетрификаты</p>
+            <p class="cursor-pointer">Бронирование отелей и аппартаментов</p>
+            <p class="cursor-pointer">Как забронироватьи оплатить тур</p>
+          </div>
+        </div>
+      
+        <div class="mb-8">
+          <h2 class="font-bold text-base mb-3">О компании </h2>
+          <div class="space-y-1">
+            <p class="cursor-pointer">Here is a dropdown item</p>
+            <p class="cursor-pointer">Here is a dropdown item</p>
+            <p class="cursor-pointer">Here is a dropdown item</p>
+          </div>
+        </div>
+        <div class="mb-8">
+          <h2 class="font-bold text-base mb-3">Контакты </h2>
+          <div class="space-y-1">
+            <p class="cursor-pointer">Here is a dropdown item</p>
+            <p class="cursor-pointer">Here is a dropdown item</p>
+            <p class="cursor-pointer">Here is a dropdown item</p>
+          </div>
+        </div>
+        <div class="flex">
+          <svg class=" " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z" />
+          </svg>
+      
+          <p class="text-sm font-bold ">г. Харьков, ул. Мироносицкая 10</p>
+        </div>
+        <div class="flex ">
+          <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z" />
+          </svg>
+      
+          <a href="tel:+380999908100" class="text-sm font-bold ">
+            +38 (099) 990-81-00
+            <span class="font-normal">(viber, telegram)</span>
+          </a>
+        </div>
+      </div>
+
+
+
+
+
+
     </div>
   </header>
   <main>
@@ -423,6 +519,7 @@
       </div>
     </div>
   </footer>
+  <script src="./src/js/mobile-menu.js"></script>
 </body>
 
 </html>
