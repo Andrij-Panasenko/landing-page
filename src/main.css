@@ -32,11 +32,11 @@
   background-size: cover;
 }
 
-.hero-main-elemeng-bg {
+/* .hero-main-elemeng-bg {
   max-width: 1352px;
   min-height: 228px;
   background-image:  linear-gradient(96deg, rgba(1, 72, 128, 0.9999999999999999) 0%, rgba(2, 73, 128, 0) 100%);
-}
+} */
 
 /* Float label for contact us section form*/
 .contact-input:focus+.contact-label,
