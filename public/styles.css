@@ -966,8 +966,20 @@ video {
   background-size: cover;
 }
 
+.bg-contain {
+  background-size: contain;
+}
+
 .bg-bottom {
   background-position: bottom;
+}
+
+.bg-top {
+  background-position: top;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-no-repeat {
@@ -1224,6 +1236,22 @@ video {
   display: inline;
 }
 
+@media (min-width: 640px) {
+  .sm\:bg-center {
+    background-position: center;
+  }
+
+  .sm\:bg-top {
+    background-position: top;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:bg-bottom {
+    background-position: bottom;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:m-0 {
     margin: 0px;
@@ -1278,6 +1306,14 @@ video {
 
   .lg\:self-baseline {
     align-self: baseline;
+  }
+
+  .lg\:bg-cover {
+    background-size: cover;
+  }
+
+  .lg\:bg-bottom {
+    background-position: bottom;
   }
 }
 
